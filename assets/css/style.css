@@ -1,0 +1,8 @@
+:root {
+    --primary: #B4BDCC;
+    --secondary: #ccb4bd;
+    --tertiary: #bdccb4;
+    --light-dark: #696e77;
+    --dark: #1e1f22;
+    --border-radius: .3rem;
+}
