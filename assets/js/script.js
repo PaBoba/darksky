@@ -15,3 +15,17 @@ const  getWeatherData = function(lat, lon, apikey){
       alert('Unable to fetch weather data');
     });
 };
+
+const getGeoCoordinates = function (city, state, country, limit, apikey) {
+    const apiUrl = 'http://api.openweathermap.org/geo/1.0/direct?q={' + city + '},' + state + '},' + country + '}&limit={' + limit + '}&appid={' + apikey + '}';
+  
+    fetch(apiUrl).then(function (response) {
+      if (response.ok) {
+        response.json().then(function (data) {
+          displayRepos(data.items, language);
+        });
+      } else {
+        alert('Error: ' + response.statusText);
+      }
+    });
+  };
