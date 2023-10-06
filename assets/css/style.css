@@ -53,3 +53,13 @@ p {
     box-shadow: 3px 3px var(--dark);
     transform: translate(-1px, -1px);
 }
+ .app-title {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: var(--border-radius);
+    color: var(--dark);
+    background-color: var(--tertiary);
+}
