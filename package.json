@@ -1,0 +1,16 @@
+{
+  "name": "darksky-weather",
+  "version": "1.0.0",
+  "description": "Darksky Weather is a application that makes it easy to check the weather in different cities around the world.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.4",
+    "env": "^0.0.2"
+  }
+}

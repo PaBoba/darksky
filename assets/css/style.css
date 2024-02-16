@@ -1,65 +1,58 @@
-:root {
-    --primary: #B4BDCC;
-    --secondary: #ccb4bd;
-    --tertiary: #bdccb4;
-    --light-dark: #696e77;
-    --dark: #1e1f22;
-    --border-radius: .3rem;
-}
-
 body {
-    background-color: var(--primary);
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    color: var(--dark);
-    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #007BFF;
+}
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+label {
+    margin-top: 10px;
+}
+
+#cityInput {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#weatherResult {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#city-date {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#temperature, #wind-speed, #humidity {
+    margin: 10px 0;
     font-size: 16px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-    margin: 0;
-    color: var(--dark);
-    line-height: 1.25;
-}
-
-main {
-    margin: 20px auto;
-    width: 94%;
-}
-
-p {
-    font-size: 1.4rem;
-}
-
-.btn {
-    font-size: 1.3rem;
-    text-decoration: none;
-    padding: 6px 5px;
-    width: 100%;
-    display: block;
-    margin: 5px 0;
-    border-radius: var(--border-radius);
-    color: var(--primary);
-    border: none;
-    outline: none;
-    background-color: var(--light-dark);
-    box-shadow: 3px 3px var(--dark);
-    transform: translate(-1px, -1px);
-}
- .app-title {
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    padding: 10px 10px;
-    display: flex;
-    justify-content: space-around;
-    border-radius: var(--border-radius);
-    color: var(--dark);
-    background-color: var(--tertiary);
-}
